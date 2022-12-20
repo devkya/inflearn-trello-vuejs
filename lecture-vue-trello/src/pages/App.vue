@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-   Start Code
+   Start Code!
   </div>
 </template>
 
