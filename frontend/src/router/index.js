@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '@/views/Home';
 import Login from '@/views/Login';
+import Board from '@/views/Board';
 import NotFound from '@/views/NotFound';
 
 Vue.use(VueRouter);
@@ -16,6 +17,11 @@ const routes = [
 		path: '/login',
 		name: 'login',
 		component: Login,
+	},
+	{
+		path: '/b/:bid',
+		name: 'board',
+		component: Board,
 	},
 	{
 		path: '/*',
