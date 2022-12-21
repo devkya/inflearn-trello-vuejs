@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import Home from '@/views/Home';
 import Login from '@/views/Login';
 import Board from '@/views/Board';
+import Card from '@/views/Card';
 import NotFound from '@/views/NotFound';
 
 Vue.use(VueRouter);
@@ -22,6 +23,12 @@ const routes = [
 		path: '/b/:bid',
 		name: 'board',
 		component: Board,
+		children: [
+			{
+				path: 'c/:cid',
+				component: Card,
+			},
+		],
 	},
 	{
 		path: '/*',
